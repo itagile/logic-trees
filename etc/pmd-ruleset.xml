@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="eclipse-pmd-rule-configuration" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0">
+<description>IT Agile Logic PMD Plugin preferences rule set</description>
+<rule ref="rulesets/java/codesize.xml">
+    <exclude name="TooManyMethods" />
+</rule>
+<rule ref="rulesets/java/finalizers.xml"/>
+<rule ref="rulesets/java/strings.xml">
+    <exclude name="InsufficientStringBufferDeclaration"/>
+</rule>
+<rule ref="rulesets/java/j2ee.xml"/>
+<rule ref="rulesets/java/controversial.xml/OnlyOneReturn"/>
+<rule ref="rulesets/java/controversial.xml/AssignmentInOperand"/>
+<rule ref="rulesets/java/controversial.xml/UnnecessaryParentheses"/>
+<rule ref="rulesets/java/javabeans.xml"/>
+<rule ref="rulesets/java/unusedcode.xml"/>
+<rule ref="rulesets/java/basic.xml"/>
+<rule ref="rulesets/java/optimizations.xml"/>
+<rule ref="rulesets/java/strictexception.xml"/>
+<rule ref="rulesets/java/design.xml"/>
+<rule ref="rulesets/java/imports.xml"/>
+<rule ref="rulesets/java/logging-jakarta-commons.xml">
+    <!-- Not necessary for logger.error -->
+    <exclude name="GuardLogStatement" />
+</rule>
+<rule ref="rulesets/java/migrating.xml"/>
+<rule ref="rulesets/java/sunsecure.xml"/>
+<rule ref="rulesets/java/logging-java.xml"/>
+<rule ref="rulesets/java/clone.xml"/>
+<rule ref="rulesets/java/android.xml"/>
+<rule ref="rulesets/java/braces.xml"/>
+<rule ref="rulesets/java/naming.xml">
+    <exclude name="ShortVariable"/>
+    <exclude name="LongVariable"/>
+</rule>
+<rule ref="rulesets/java/coupling.xml">
+    <exclude name="LoosePackageCoupling" />
+    <!-- LawOfDemeter seems to be bugged -->
+    <exclude name="LawOfDemeter" />
+</rule>
+<rule ref="rulesets/java/junit.xml"/>
+</ruleset>
