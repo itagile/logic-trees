@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.itagile.logic</groupId>
 	<artifactId>logic-trees</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>logic-trees</name>
 	<description>Generic Java tree data structures, builders and models</description>
 	<url>https://github.com/itagile/logic-trees/</url>
@@ -17,15 +17,11 @@
 		<maven-min.version>3.0.5</maven-min.version>
 		<!-- dependencies -->
 		<hamcrest.version>2.0.0.0</hamcrest.version>
-		<jackson.version>2.9.8</jackson.version>
+		<jackson-annotations.version>2.9.9</jackson-annotations.version>
+		<jackson-databind.version>2.9.9.2</jackson-databind.version>
 		<junit.version>4.12</junit.version>
 		<skyscreamer.version>1.5.0</skyscreamer.version>
 	</properties>
-
-	<!-- Required by versions-maven-plugin (2017-06-19) https://github.com/mojohaus/versions-maven-plugin/issues/48 -->
-	<prerequisites>
-		<maven>${maven-min.version}</maven>
-	</prerequisites>
 
 	<build>
 		<pluginManagement>
@@ -122,7 +118,7 @@
 				<plugin>
 					<groupId>org.sonarsource.scanner.maven</groupId>
 					<artifactId>sonar-maven-plugin</artifactId>
-					<version>3.6.0.13</version>
+					<version>3.6.0.1398</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -194,7 +190,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-			<version>${jackson.version}</version>
+			<version>${jackson-annotations.version}</version>
 			<optional>true</optional>
 		</dependency>
 
@@ -208,7 +204,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>${jackson.version}</version>
+			<version>${jackson-databind.version}</version>
 			<scope>test</scope>
 		</dependency>
 
