@@ -18,7 +18,7 @@
 		<!-- dependencies -->
 		<hamcrest.version>2.0.0.0</hamcrest.version>
 		<jackson-annotations.version>2.9.9</jackson-annotations.version>
-		<jackson-databind.version>2.9.9.2</jackson-databind.version>
+		<jackson-databind.version>2.9.10.1</jackson-databind.version>
 		<junit.version>4.12</junit.version>
 		<skyscreamer.version>1.5.0</skyscreamer.version>
 	</properties>
