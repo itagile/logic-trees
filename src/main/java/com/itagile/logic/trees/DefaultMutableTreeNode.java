@@ -44,17 +44,17 @@ public class DefaultMutableTreeNode<T> implements MutableTreeNode<T> {
     private T data;
 
     /**
-     * Collection of node's child nodes.
+     * Collection of children nodes.
      */
     private Collection<MutableTreeNode<T>> collection;
 
     /**
-     * Unmodifiable view of node's child nodes.
+     * Unmodifiable view of children nodes.
      */
     private Iterable<TreeNode<T>> unmodifiableChildren;
 
     /**
-     * Unmodifiable view of node's child nodes.
+     * Unmodifiable view of children nodes.
      */
     private Iterable<MutableTreeNode<T>> unmodifiableMutableChildren;
 
@@ -87,7 +87,7 @@ public class DefaultMutableTreeNode<T> implements MutableTreeNode<T> {
      * node.
      * @param data the data object in this node
      * @param parent this node's parent TreeNode, or null if this node has no parent
-     * @param collection the collection of node's child nodes
+     * @param collection the collection of children nodes
      */
     protected DefaultMutableTreeNode(final T data, final MutableTreeNode<T> parent,
             final Collection<MutableTreeNode<T>> collection) {
@@ -97,18 +97,18 @@ public class DefaultMutableTreeNode<T> implements MutableTreeNode<T> {
     }
 
     /**
-     * Gets the collection of node's child nodes.
+     * Gets the collection of children nodes.
      *
-     * @return the collection of node's child nodes
+     * @return the collection of children nodes
      */
     protected final Collection<MutableTreeNode<T>> getCollection() {
         return collection;
     }
 
     /**
-     * Sets the collection of node's child nodes.
+     * Sets the collection of children nodes.
      *
-     * @param collection the new collection of node's child nodes
+     * @param collection the new collection of children nodes
      */
     protected final void setCollection(final Collection<MutableTreeNode<T>> collection) {
         this.unmodifiableChildren = Collections
